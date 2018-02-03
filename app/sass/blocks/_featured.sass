@@ -1,0 +1,64 @@
+.features
+	position: relative
+	&__carousel
+	&__item
+	.owl-dots
+		position: absolute
+		padding-right: 50px
+		top: -100px
+		right: 20px
+		.owl-dot
+			margin-left: 10px
+			display: inline-block
+			width: 10px
+			height: 10px
+			background: $dots-dc
+			border-radius: 50%
+			&.active
+				background: $dot-sc
+	&__item-photo
+		img
+			margin-bottom: 25px
+			width: auto
+			height: auto
+	&__item-descr
+		font-size: 0
+		@media screen and (max-width: 768px)
+			padding: 0 15px 0
+		&-inner
+			display: inline-block
+			font-size: $dfz
+			vertical-align: middle
+			&--left
+				width: 70%
+			&--dish-name
+				a
+					color: $gray
+			&--right
+				width: 30%
+				text-align: right
+				vertical-align: top
+	.rating > span:hover:before 
+		content: "\2605"
+		position: absolute
+	.rating
+		text-align: left
+		unicode-bidi: bidi-override
+		direction: rtl
+		color: $dots-dc
+	.rating > span:hover:before,
+	.rating > span:hover ~ span:before
+		content: "\2605"
+		position: absolute
+		color: yellow
+	.rating
+		unicode-bidi: bidi-override
+		direction: rtl
+	.rating > span
+		display: inline-block
+		position: relative
+		width: 1.1em
+	.rating > span:hover:before,
+	.rating > span:hover ~ span:before
+		content: "\2605"
+		position: absolute

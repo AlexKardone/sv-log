@@ -1,0 +1,43 @@
+.page-footer
+	a
+		color: $footer-color
+		@media screen and (max-width: 768px)
+			font-size: $dfz - 4
+	&__wrapper
+		padding: 90px 0 90px
+		color: $footer-color
+		background-color: $gray2
+		@media screen and (max-width: 768px)
+			padding: 40px 0 40px
+	&__address
+		p 
+			margin: 0
+			line-height: $dlh + 0.2
+			font-weight: 300
+			@media screen and (max-width: 768px)
+				font-size: $dfz - 4
+				margin-bottom: 20px
+		b
+			font-weight: 400
+			@media screen and (max-width: 768px)
+				font-size: $dfz - 3
+	&__nav
+		ul,
+		li
+			margin: 0
+			padding: 0
+		ul
+			list-style: none
+			@media screen and (max-width: 768px)
+				margin-bottom: 20px
+		li
+			margin-bottom: 10px
+	&__logo
+		img
+			@media screen and (max-width: 768px)
+				width: 60px
+				height: auto
+	&__copyrights,
+	&__find-more
+		@media screen and (max-width: 768px)
+			font-size: $dfz - 4
