@@ -1,65 +1,12 @@
-// .hero
-// 	height: 540px
-// 	color: $white
-// 	border-bottom: 4px solid $red
-// 	background-color: gray
-// 	background-image: url("../img/main-banner.jpg")
-// 	@media screen and (max-width: 768px)
-// 		padding: 40px 0 40px
-// 		height: auto
-// 	&__wrapper
-// 		width: 100%
-// 		height: 100%
-// 		display: table
-// 	&__row
-// 		display: table-row
-// 	&__centred
-// 		display: table-cell
-// 		text-align: center
-// 		vertical-align: middle
-// 		h1
-// 			margin: 0
-// 			font-family: 'WC Mano Negra Bta'
-// 			font-size: $dfz * 5.2
-// 			@media screen and (max-width: 768px)
-// 				font-size: $dfz * 3
-// 		p 
-// 			margin: 0
-// 			display: inline-block
-// 			@media screen and (max-width: 480px)
-// 				font-size: $dfz - 2
-// 			&::before,
-// 			&::after
-// 				content: ""
-// 				display: inline-block
-// 				width: 40px
-// 				height: 1px
-// 				vertical-align: middle
-// 				background-color: #FFF
-// 				@media screen and (max-width: 480px)
-// 					display: none
-// 			&::before
-// 				margin-right: 25px
-// 			&::after
-// 				margin-left: 25px
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.hero
+	&__row,
+	&__jumbotron
+		height: 100vh
+		@media screen and (max-width: 768px)
+			height: auto
+	&__jumbotron
+		background: url('../img/header-bg.jpg') bottom left
+		@media screen and (max-width: 768px)
+			padding-top: 200px
+			&-text
+				font-size: 1.5rem

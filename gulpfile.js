@@ -32,12 +32,11 @@ gulp.task('browser-sync', function() {
 
 gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
-        'app/libs/jquery/dist/jquery.slim.min.js',
-        'app/libs/popper.js/dist/popper.min.js', // Берем jQuery
+        'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
+        'app/libs/popper.js/dist/umd/popper.min.js',
         'app/libs/bootstrap/dist/js/bootstrap.js',
-        'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js', // Берем Magnific Popup
-        'app/libs/owl.carousel/dist/owl.carousel.min.js',
-        'app/libs/simplelightbox-master/dist/simple-lightbox.min.js'])
+        'app/libs/waypoints/lib/jquery.waypoints.min.js',
+        'app/libs/animate/animate-css.js'])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
         .pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
